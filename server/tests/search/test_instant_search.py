@@ -1,10 +1,6 @@
 import pytest
 
 from search.instant_search import (
-    format_volpage,
-    standardization_volpage,
-    roman_to_int,
-    extract_query_conditions,
     is_chinese,
     extract_lang_param,
     extract_not_param,
@@ -13,6 +9,7 @@ from search.instant_search import (
     sanitize_quoted_query,
     normalize_filter_commands, construct_search_query_aql
 )
+from search.query_aql import extract_query_conditions, format_volpage, standardization_volpage, roman_to_int
 
 from search.validate_filter import validate_filter_commands
 
